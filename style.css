@@ -215,3 +215,9 @@ body {
     left: -10px;
     bottom: -25px;
 }
+
+@media (max-width: 530px) {
+    .main {
+        padding: 1rem;
+    }
+}
