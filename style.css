@@ -9,4 +9,31 @@
 body {
     background: #fffefe;
     min-height: 100vh;
+    font-family: "DM Sans", sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1.2rem;
+}
+
+.header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.icon {
+    aspect-ratio: 1 / 1;
+    max-width: 100px;
+    transition: 0.32s cubic-bezier(1, -0.4, 0.45, 0.99);
+}
+
+.header div:hover .icon {
+    rotate: 35deg;
 }
