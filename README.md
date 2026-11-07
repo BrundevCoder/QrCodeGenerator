@@ -3,6 +3,8 @@
 
 QrCode generator is a website where you put text / a url and it creates a Qr Code almost instantly!
 
+You can use it [here](https://github.com/BrundevCoder/QrCodeGenerator)
+
 ## How to use:
 
 ![Example](README_images/example.jpg)
