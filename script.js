@@ -21,20 +21,28 @@ function generateQrCode() {
 }
 
 yellowColorButton.addEventListener("click", () => {
+    const element = document.querySelector(".selected");
+    element.classList.remove("selected");
+    yellowColorButton.classList.add("selected");
     color = "f1f50e";
-    generateQrCode();
 })
 blueColorButton.addEventListener("click", () => {
+    const element = document.querySelector(".selected");
+    element.classList.remove("selected");
+    blueColorButton.classList.add("selected");
     color = "0e48f5";
-    generateQrCode();
 })
 greenColorButton.addEventListener("click", () => {
+    const element = document.querySelector(".selected");
+    element.classList.remove("selected");
+    greenColorButton.classList.add("selected");
     color = "0cff45";
-    generateQrCode();
 })
 redColorButton.addEventListener("click", () => {
+    const element = document.querySelector(".selected");
+    element.classList.remove("selected");
+    redColorButton.classList.add("selected");
     color = "ff0c0c";
-    generateQrCode();
 })
 
 generateButton.addEventListener("click", () => {
