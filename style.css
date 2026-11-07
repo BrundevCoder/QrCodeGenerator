@@ -81,7 +81,7 @@ body {
     left: 0;
     bottom: -25px;
     border-radius: 99px;
-    z-index: -1;
+    z-index: -2;
     transform: translate(-50%, -50%);
 }
 
@@ -94,7 +94,7 @@ body {
     right: 0;
     top: -25px;
     border-radius: 99px;
-    z-index: -1;
+    z-index: -2;
     transform: translate(50%, 50%);
 }
 
@@ -155,4 +155,53 @@ body {
 
 .red {
     background: #ff0c0c !important;
+}
+
+#generateButton {
+    position: relative;
+    margin-bottom: 1rem;
+    font-size: 25px;
+    background: #fff;
+    border-radius: 8px;
+    border: 2px solid #000;
+    z-index: 1;
+    transition: 125ms ease;
+}
+
+#generateButton::after {
+    content: "";
+    position: absolute;
+    background: #00000000;
+    width: 25px;
+    height: 25px;
+    right: 50%;
+    top: -10px;
+    border-radius: 99px;
+    z-index: -1;
+    transform: translate(50%, 50%);
+    transition: 125ms cubic-bezier(1, -0.08, 0.84, 0.14);
+}
+#generateButton::before {
+    content: "";
+    position: absolute;
+    background: #00000000;
+    width: 25px;
+    height: 25px;
+    left: 50%;
+    bottom: -10px;
+    border-radius: 99px;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    transition: 125ms cubic-bezier(1, -0.08, 0.84, 0.14);
+}
+
+#generateButton:hover::after {
+    background: #000;
+    right: -10px;
+    top: -25px;
+}
+#generateButton:hover::before {
+    background: #000;
+    left: -10px;
+    bottom: -25px;
 }
