@@ -37,3 +37,122 @@ body {
 .header div:hover .icon {
     rotate: 35deg;
 }
+
+.qrCodeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+}
+
+.qrCodeResult {
+    transform: scale(1.15);
+    background: rgb(187, 185, 185);
+    border-radius: 12px;
+    padding: 1rem;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.group-inputs {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    background: #fffefe;
+    border: 3px solid #000;
+    border-radius: 8px;
+}
+
+.group-inputs::after {
+    content: "";
+    position: absolute;
+    background: #000;
+    width: 25px;
+    height: 25px;
+    left: 0;
+    bottom: -25px;
+    border-radius: 99px;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+
+.group-inputs::before {
+    content: "";
+    position: absolute;
+    background: #000;
+    width: 25px;
+    height: 25px;
+    right: 0;
+    top: -25px;
+    border-radius: 99px;
+    z-index: -1;
+    transform: translate(50%, 50%);
+}
+
+.group-inputs h2 {
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 2rem;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 250px;
+    background: #fffefe;
+}
+
+#contentInput {
+    position: relative;
+    color: #333;
+    background: #ddd;
+    font-size: 20px;
+    outline: none;
+    border: 5px solid #000;
+    border-radius: 8px;
+    padding: .5rem;
+    margin-bottom: 1rem;
+}
+
+.colors-row {
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 10px 5px;
+    flex-wrap: wrap;
+}
+
+.color-button {
+    cursor: pointer;
+    border-radius: 8px;
+    border: 2px solid #000;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.yellow {
+    background: #f1f50e !important;
+}
+
+.blue {
+    background: #0e48f5 !important;
+}
+
+.green {
+    background: #0cff45 !important;
+}
+
+.red {
+    background: #ff0c0c !important;
+}

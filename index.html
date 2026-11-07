@@ -15,5 +15,27 @@
             <p>QrCode Generator</p>
         </div>
     </header>
+
+    <main class="main">
+
+        <section class="qrCodeContainer">
+            <img src="qrCodeIcon.svg" alt="QrCode" class="qrCodeResult">
+        </section>
+
+        <section class="group-inputs">
+            <h2>Configurations</h2>
+            <div class="data">
+                <input type="text" id="contentInput" placeholder="Text/Link here">
+
+                <h3>Color:</h3>
+                <div class="colors-row">
+                    <button class="yellow color-button" id="yellowColorButton"></button>
+                    <button class="blue color-button" id="blueColorButton"></button>
+                    <button class="green color-button" id="greenColorButton"></button>
+                    <button class="red color-button" id="redColorButton"></button>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
