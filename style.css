@@ -224,9 +224,11 @@ body {
 
 #finderDotStyle {
     margin-bottom: 1rem;
+    outline: none;
 }
 
 #captionInput {
+    outline: none;
     margin-bottom: 1rem;
 }
 
